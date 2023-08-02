@@ -1,0 +1,183 @@
+[
+    {
+      "id": 1,
+      "name": "Fitbit Charge 4",
+      "brand": "Fitbit",
+      "price": 149.99,
+      "image": "fitbit_charge_4.jpg",
+      "description": "Advanced fitness tracker with heart rate monitoring and GPS.",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Apple Watch Series 6",
+      "brand": "Apple",
+      "price": 399.00,
+      "image": "apple_watch_series_6.jpg",
+      "description": "Smartwatch with health and fitness features, ECG, and SpO2 monitoring.",
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "name": "Garmin Forerunner 245",
+      "brand": "Garmin",
+      "price": 299.99,
+      "image": "garmin_forerunner_245.jpg",
+      "description": "GPS running watch with advanced training features and music storage.",
+      "rating": 4.6
+    },
+    {
+      "id": 4,
+      "name": "Fossil Gen 5",
+      "brand": "WearOS",
+      "price": 295.00,
+      "image": "fossil_gen_5.jpg",
+      "description": "Stylish Wear OS smartwatch with heart rate tracking and customizable dials.",
+      "rating": 4.4
+    },
+    {
+      "id": 5,
+      "name": "Omron HeartGuide",
+      "brand": "Omron",
+      "price": 499.99,
+      "image": "omron_heartguide.jpg",
+      "description": "Blood pressure smartwatch with FDA clearance and heart health tracking.",
+      "rating": 4.3
+    },
+    {
+      "id": 6,
+      "name": "Accu-Chek Guide Me",
+      "brand": "Accu Chek",
+      "price": 79.99,
+      "image": "accu_chek_guide_me.jpg",
+      "description": "Diabetes management system with glucose monitoring and mobile app.",
+      "rating": 4.7
+    },
+    {
+      "id": 7,
+      "name": "Fitbit Versa 3",
+      "brand": "Fitbit",
+      "price": 229.99,
+      "image": "fitbit_versa_3.jpg",
+      "description": "Versatile smartwatch with built-in GPS and heart rate tracking.",
+      "rating": 4.4
+    },
+    {
+      "id": 8,
+      "name": "Apple Watch SE",
+      "brand": "Apple",
+      "price": 279.00,
+      "image": "apple_watch_se.jpg",
+      "description": "Affordable smartwatch with health features and fitness tracking.",
+      "rating": 4.6
+    },
+    {
+      "id": 9,
+      "name": "Garmin Venu 2",
+      "brand": "Garmin",
+      "price": 349.99,
+      "image": "garmin_venu_2.jpg",
+      "description": "AMOLED smartwatch with advanced health metrics and activity profiles.",
+      "rating": 4.7
+    },
+    {
+      "id": 10,
+      "name": "WearOS by Google",
+      "brand": "WearOS",
+      "price": 199.00,
+      "image": "wearos_by_google.jpg",
+      "description": "Google's Wear OS platform for various smartwatches.",
+      "rating": 4.2
+    },
+    {
+      "id": 11,
+      "name": "Omron Platinum Blood Pressure Monitor",
+      "brand": "Omron",
+      "price": 89.99,
+      "image": "omron_platinum_bp_monitor.jpg",
+      "description": "Clinically validated blood pressure monitor with heart health features.",
+      "rating": 4.5
+    },
+    {
+      "id": 12,
+      "name": "Accu-Chek Aviva Plus",
+      "brand": "Accu Chek",
+      "price": 39.99,
+      "image": "accu_chek_aviva_plus.jpg",
+      "description": "Glucose monitoring system with compact design and easy testing.",
+      "rating": 4.3
+    },
+    {
+      "id": 13,
+      "name": "Fitbit Inspire 2",
+      "brand": "Fitbit",
+      "price": 99.95,
+      "image": "fitbit_inspire_2.jpg",
+      "description": "Slim fitness tracker with heart rate monitoring and sleep tracking.",
+      "rating": 4.1
+    },
+    {
+      "id": 14,
+      "name": "Apple Watch Series 7",
+      "brand": "Apple",
+      "price": 499.00,
+      "image": "apple_watch_series_7.jpg",
+      "description": "The latest Apple Watch with larger display and new health features.",
+      "rating": 4.9
+    },
+    {
+      "id": 15,
+      "name": "Garmin Instinct Solar",
+      "brand": "Garmin",
+      "price": 399.99,
+      "image": "garmin_instinct_solar.jpg",
+      "description": "Rugged outdoor smartwatch with solar charging and health monitoring.",
+      "rating": 4.7
+    },
+    {
+      "id": 16,
+      "name": "WearOS TicWatch Pro 3",
+      "brand": "WearOS",
+      "price": 299.99,
+      "image": "wearos_ticwatch_pro_3.jpg",
+      "description": "Dual-display smartwatch with long battery life and fitness tracking.",
+      "rating": 4.4
+    },
+    {
+      "id": 17,
+      "name": "Omron Platinum 10 Series Blood Pressure Monitor",
+      "brand": "Omron",
+      "price": 99.99,
+      "image": "omron_platinum_10_series.jpg",
+      "description": "Advanced blood pressure monitor with multiple user capability.",
+      "rating": 4.6
+    },
+    {
+      "id": 18,
+      "name": "Accu-Chek Instant Blood Glucose Monitor",
+      "brand": "Accu Chek",
+      "price": 29.99,
+      "image": "accu_chek_instant_bg_monitor.jpg",
+      "description": "Easy-to-use glucose monitor for quick and accurate testing.",
+      "rating": 4.2
+    },
+    {
+      "id": 19,
+      "name": "Fitbit Luxe",
+      "brand": "Fitbit",
+      "price": 149.95,
+      "image": "fitbit_luxe.jpg",
+      "description": "Elegant fitness and wellness tracker with customizable design.",
+      "rating": 4.3
+    },
+    {
+      "id": 20,
+      "name": "Apple Watch Series 8",
+      "brand": "Apple",
+      "price": 549.00,
+      "image": "apple_watch_series_8.jpg",
+      "description": "The latest Apple Watch with innovative features and health advancements.",
+      "rating": 4.8
+    }
+  ]
+  

@@ -22,10 +22,15 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.abhay.FireBeats"
+      "package": "com.abhay.FireBeats",
+      "config": {
+        "googleSignIn": {
+          "certificateHash": "E8:3F:18:0B:3C:B8:3E:D4:C8:48:A8:E0:BE:74:8D:4B:DB:38:B0:89"
+        }
+      }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo.png"
     },
     "scheme": "firebeats"
   }
