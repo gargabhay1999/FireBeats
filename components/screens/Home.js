@@ -1,68 +1,74 @@
-import { Pressable, View, Image, Text } from "react-native";
-import React from 'react';
+import { Pressable, View, Image, Text, FlatList, TouchableOpacity } from "react-native";
+import React, { useEffect, useState } from 'react';
 import Listing from "./Listing";
+import Header from "./Header";
+import { products } from "./Products";
+import ProductCard from "./ProductCard";
 
 const Home = ({ navigation, route }) => {
+    const [categoryList, setCategoryList] = useState([]);
+    const [trackerList, setTrackerList] = useState([]);
+    const [tshirtList, setTshirtList] = useState([]);
+    const [jeansList, setJeansList] = useState([]);
+    const [kurtaList, setKurtaList] = useState([]);
+    const [shirtList, setShirtList] = useState([]);
+    const [socksList, setSocksList] = useState([]);
+    const [shoesList, setShoesList] = useState([]);
+
+    useEffect(() => {
+        console.log(products);
+        let tempCategory = [];
+        products.category.map(item => {
+            tempCategory.push(item);
+        })
+        setCategoryList(tempCategory);
+        setTshirtList(products.category[0].data);
+        setJeansList(products.category[1].data);
+        setKurtaList(products.category[2].data);
+        setShirtList(products.category[3].data);
+        setSocksList(products.category[4].data);
+        setShoesList(products.category[5].data);
+    }, [])
+
     return (
         <View style={{ flex: 1 }}>
-            <View style={{
-                width: '100%',
-                height: 70,
-                backgroundColor: '#808080',
-                position: 'absolute',
-                flexDirection: 'row',
-                alignItems: 'center',
-            }}>
-                <Text style={{
-                    width: '40%',
-                    left: '15%'
-                }}>{"Hello!\n" + route.params.name}</Text>
-                <Pressable style={{
-                    width: '15%',
-                    height: '100%',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }} onPress={() => navigation.navigate("Cart")}>
-                    <Image
-                        source={require('./../../assets/cart.png')}
-                        style={{ width: 24, height: 24 }}
-                    />
-                </Pressable>
-                <Pressable style={{
-                    width: '15%',
-                    height: '100%',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }} onPress={() => navigation.navigate("Info")}>
-                    <Image
-                        source={require('./../../assets/info.png')}
-                        style={{ width: 24, height: 24 }}
-                    />
-                </Pressable>
-                <Pressable style={{
-                    width: '15%',
-                    height: '100%',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }} onPress={() => navigation.navigate("Notification")}>
-                    <Image
-                        source={require('./../../assets/bell.jpg')}
-                        style={{ width: 24, height: 24 }}
-                    />
-                </Pressable>
-                <Pressable style={{
-                    width: '15%',
-                    height: '100%',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }} onPress={() => navigation.navigate("Inbox")}>
-                    <Image
-                        source={require('./../../assets/email.jpg')}
-                        style={{ width: 24, height: 24 }}
-                    />
-                </Pressable>
+            <Header route={route} navigation={navigation} />
+            <View style={{marginTop: 80}}>
+                <FlatList 
+                    data={categoryList}
+                    horizontal 
+                    showsHorizontalScrollIndicator={false}
+                    renderItem={({item, index}) => {
+                    return (
+                        <TouchableOpacity style={{padding: 10, borderWidth: 1, marginLeft: 20, borderRadius: 20}}>
+                            <Text>{item.category}</Text>
+                        </TouchableOpacity>
+                    )
+                }}/>
             </View>
-            <Listing/>
+            <Text
+                style={{
+                    marginTop: 20,
+                    marginLeft: 20,
+                    color: '#000',
+                    fontSize: 16,
+                    fontWeight: '600',
+                }}
+            >
+                {"New Tshirts"}
+            </Text>
+            <View style={{marginTop: 20}}>
+                <FlatList 
+                    data={tshirtList}
+                    vertical 
+                    showsHorizontalScrollIndicator={false}
+                    renderItem={({item, index}) => {
+                    return (
+                        <ProductCard item={item}/>
+                    )
+                }}/>
+            </View>
+            {/* <Listing/> */}
         </View>
     );
 };
