@@ -46,17 +46,21 @@ const Home = ({ navigation, route }) => {
                     )
                 }}/>
             </View>
-            <Text
-                style={{
-                    marginTop: 20,
-                    marginLeft: 20,
-                    color: '#000',
-                    fontSize: 16,
-                    fontWeight: '600',
-                }}
-            >
-                {"New Tshirts"}
-            </Text>
+            <View style={{
+                marginTop: 20,
+                alignItems: 'center',
+            }}>
+                <Text
+                    style={{
+                        color: '#000',
+                        fontSize: 16,
+                        fontWeight: '600',
+                    }}
+                >
+                    {"Today's Deals"}
+                </Text>
+            </View>
+            
             <View style={{marginTop: 20}}>
                 <FlatList 
                     data={tshirtList}
