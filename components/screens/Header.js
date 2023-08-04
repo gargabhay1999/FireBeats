@@ -13,9 +13,19 @@ const Header = ({navigation, route}) => {
             flexDirection: 'row',
             alignItems: 'center',
         }}>
+            <Pressable style={{
+                width: '15%',
+                height: '100%',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }} onPress={() => navigation.navigate("Profile", {name:route.params.name})}>
+                <Image
+                    source={require('./../../assets/profile.png')}
+                    style={{ width: 28, height: 28 }}
+                />
+            </Pressable>
             <Text style={{
                 width: '40%',
-                left: '15%'
             }}>{"Hello!\n" + route.params.name}</Text>
             <Pressable style={{
                 width: '15%',

@@ -10,6 +10,9 @@ import NotificationScreen from './components/screens/Notification';
 import InboxScreen from './components/screens/Inbox';
 import HeaderScreen from './components/screens/Header';
 import WishlistScreen from './components/screens/Wishlist';
+import ProfileScreen from './components/screens/Profile';
+import MyAddressScreen from './components/screens/MyAddress';
+import AddAddressScreen from './components/screens/AddAddress';
 
 const Stack = createStackNavigator();
 
@@ -25,7 +28,9 @@ const AppNavigator = () => {
           <Stack.Screen name="Inbox" component={InboxScreen} />
           <Stack.Screen name="Header" component={HeaderScreen} />
           <Stack.Screen name="Wishlist" component={WishlistScreen} />
-  
+          <Stack.Screen name="Profile" component={ProfileScreen} />
+          <Stack.Screen name="MyAddress" component={MyAddressScreen} />
+          <Stack.Screen name="AddAddress" component={AddAddressScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     );
