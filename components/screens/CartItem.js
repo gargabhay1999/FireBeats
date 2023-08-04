@@ -11,8 +11,9 @@ const CartItem = ({ item, onRemoveItem, onAddWishList, onRemoveFromWishlist, isW
                 elevation: 5,
                 backgroundColor: '#fff',
                 marginTop: 20,
-                marginLeft: 20,
-                marginBottom: 10
+                marginLeft: 15,
+                marginBottom: 10,
+                marginRight: 15
             }}>
                 <Image source={item.image} style={{ width: '100%', height: '70%', borderTopLeftReadius: '10', borderTopRightReadius: '10' }} />
                 <View
@@ -34,38 +35,38 @@ const CartItem = ({ item, onRemoveItem, onAddWishList, onRemoveFromWishlist, isW
                         borderWidth: 1,
                         borderRadius: 5,
                         padding: 5,
-                        backgroundColor: 'green',
+                        backgroundColor: 'black',
                         alignItems: 'center',
                         justifyContent: 'center'
                     }} onPress={() => {
                         onAddToCart(item)
                     }}>
-                        <Text>{"Add to Cart"}</Text>
+                        <Text style={{color:'white', fontSize:16}}>{"Add to Cart"}</Text>
                     </TouchableOpacity>) : (
                         <TouchableOpacity style={{
                             marginTop: 5,
                             borderWidth: 1,
                             borderRadius: 5,
                             padding: 5,
-                            backgroundColor: 'green',
+                            backgroundColor: 'black',
                             alignItems: 'center',
                             justifyContent: 'center'
                         }} onPress={() => {
                             onRemoveItem(item)
                         }}>
-                            <Text>{"Remove"}</Text>
+                            <Text style={{color:'white', fontSize:16}}>{"Remove"}</Text>
                         </TouchableOpacity>
                     )}
                 </View>
                 <TouchableOpacity style={{
-                    width: 50,
-                    height: 50,
-                    backgroundColor: 'fff',
+                    width: 40,
+                    height: 40,
+                    backgroundColor: '#fff',
                     borderRadius: 25,
                     elevation: 5,
                     position: 'absolute',
                     top: 20,
-                    left: 20,
+                    left: 10,
                     justifyContent: 'center',
                     alignItems: 'center',
                 }}>
@@ -73,14 +74,14 @@ const CartItem = ({ item, onRemoveItem, onAddWishList, onRemoveFromWishlist, isW
                 </TouchableOpacity>
                 {isWishlist ? (
                     <TouchableOpacity style={{
-                        width: 50,
-                        height: 50,
-                        backgroundColor: 'fff',
+                        width: 40,
+                        height: 40,
+                        backgroundColor: '#fff',
                         borderRadius: 25,
                         elevation: 5,
                         position: 'absolute',
-                        top: 60,
-                        left: 20,
+                        top: 75,
+                        left: 10,
                         justifyContent: 'center',
                         alignItems: 'center',
                     }} onPress={() => {
@@ -90,14 +91,14 @@ const CartItem = ({ item, onRemoveItem, onAddWishList, onRemoveFromWishlist, isW
                     </TouchableOpacity>
                 ) : (
                     <TouchableOpacity style={{
-                        width: 50,
-                        height: 50,
-                        backgroundColor: 'fff',
+                        width: 40,
+                        height: 40,
+                        backgroundColor: '#fff',
                         borderRadius: 25,
                         elevation: 5,
                         position: 'absolute',
-                        top: 60,
-                        left: 20,
+                        top: 75,
+                        left: 10,
                         justifyContent: 'center',
                         alignItems: 'center',
                     }} onPress={() => {

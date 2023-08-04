@@ -37,6 +37,20 @@ export const products = {
                     discountedPrice: '250',
                     gender: 'male',
                     image: require('./../../assets/listing/watch1.jpeg')
+                },
+                {
+                    'name':'t-shirt 5',
+                    price: '300',
+                    discountedPrice: '250',
+                    gender: 'male',
+                    image: require('./../../assets/listing/watch1.jpeg')
+                },
+                {
+                    'name':'t-shirt 6',
+                    price: '300',
+                    discountedPrice: '250',
+                    gender: 'male',
+                    image: require('./../../assets/listing/watch1.jpeg')
                 }
             ]
         },
