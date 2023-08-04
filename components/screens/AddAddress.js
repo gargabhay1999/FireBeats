@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Pressable, View, Image, Text, FlatList, TouchableOpacity, SafeAreaView, StyleSheet, TextInput } from "react-native";
+import { useDispatch } from "react-redux";
+import { addAddress } from "../redux/actions/Actions";
 
 const AddAddress = ({ navigation }) => {
     const [city, setCity] = useState('');
     const [building, setBuilding] = useState('');
     const [pincode, setPincode] = useState('');
+    const dispatch = useDispatch();
     return (
         <View style={{ flex: 1 }}>
             <View style={{ width: '100%', height: 70, justifyContent: "space-between", flexDirection: 'row', alignItems: 'center' }}>
@@ -62,7 +65,13 @@ const AddAddress = ({ navigation }) => {
                     width: '95%',
                     alignSelf:'center'
                 }}
-                onPress={() => navigation.navigate("MyAddress")}>
+                onPress={() => {
+                    if(city!=='' && building!=='' && pincode!=='') {
+                        dispatch(addAddress({city:city, building:building, pincode:pincode}));
+                        navigation.goBack("MyAddress")
+                    }
+                    
+                }}>
                     <Text style={{color:'#fff'}}>{"Save Address"}</Text>
             </Pressable>
         </View>

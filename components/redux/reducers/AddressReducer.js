@@ -1,11 +1,11 @@
-import { ADD_TO_WISHLIST, REMOVE_FROM_WISHLIST } from "../ActionTypes";
+import { ADD_ADDRESS, DELETE_ADDRESS } from "../ActionTypes";
 
-const Reducers2 = (state = [], action) => {
+const AddressReducers = (state = [], action) => {
     switch (action.type) {
-        case ADD_TO_WISHLIST:
+        case ADD_ADDRESS:
             return [...state, action.payload];
 
-        case REMOVE_FROM_WISHLIST:
+        case DELETE_ADDRESS:
             const deletedArray = state.filter((item, index) => {
                 return index !== action.payload
             })
@@ -15,5 +15,4 @@ const Reducers2 = (state = [], action) => {
             return state;
     }
 };
-export default Reducers2;
-
+export default AddressReducers;
