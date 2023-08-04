@@ -6,8 +6,8 @@ const ProductCard = ({item, onAddToCart, onAddWishList}) => {
         <View style={{
             width: '100%',
             height: 450,
-            borderRadius: '10',
-            elevation: '5',
+            borderRadius: 10,
+            elevation: 5,
             backgroundColor: '#fff',
             marginLeft: 20,
             marginBottom: 10
@@ -28,8 +28,8 @@ const ProductCard = ({item, onAddToCart, onAddWishList}) => {
                 </Text>
                 <TouchableOpacity style={{
                     marginTop: 5,
-                    borderWidth: '1',
-                    borderRadius: '5',
+                    borderWidth: 1,
+                    borderRadius: 5,
                     padding: 5,
                     backgroundColor: 'green',
                     alignItems: 'center',
@@ -44,7 +44,7 @@ const ProductCard = ({item, onAddToCart, onAddWishList}) => {
                 width: 50,
                 height: 50,
                 backgroundColor: 'fff',
-                borderRadius: '25',
+                borderRadius: 25,
                 elevation: 5,
                 position: 'absolute',
                 top: 20,
@@ -58,7 +58,7 @@ const ProductCard = ({item, onAddToCart, onAddWishList}) => {
                 width: 50,
                 height: 50,
                 backgroundColor: 'fff',
-                borderRadius: '25',
+                borderRadius: 25,
                 elevation: 5,
                 position: 'absolute',
                 top: 60,
