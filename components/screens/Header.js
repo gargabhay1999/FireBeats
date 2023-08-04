@@ -1,7 +1,9 @@
 import React from "react";
 import { Pressable, View, Image, Text } from "react-native";
+import { useSelector } from "react-redux";
 
 const Header = ({navigation, route}) => {
+    const data = useSelector(state=>state)
     return (
         <View style={{
             width: '100%',
@@ -25,6 +27,20 @@ const Header = ({navigation, route}) => {
                     source={require('./../../assets/cart.png')}
                     style={{ width: 24, height: 24 }}
                 />
+                <View 
+                    style={{
+                        width: 14,
+                        height: 14,
+                        backgroundColor:'red',
+                        borderRadius: 7,
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        position: 'absolute',
+                        top: 20,
+                        right: 12,
+                    }}>
+                    <Text>{data.Reducers.length}</Text>
+                </View>
             </Pressable>
             <Pressable style={{
                 width: '15%',

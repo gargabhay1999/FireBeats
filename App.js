@@ -3,35 +3,17 @@
 
 import * as React from 'react';
 import * as WebBrowser from 'expo-web-browser';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-// import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import LoginScreen from './components/screens/Login';
-import HomeScreen from './components/screens/Home';
-import CartScreen from './components/screens/Cart';
-import InfoScreen from './components/screens/Info';
-import NotificationScreen from './components/screens/Notification';
-import InboxScreen from './components/screens/Inbox';
-import HeaderScreen from './components/screens/Header';
-
-
-const Stack = createStackNavigator();
+import AppNavigator from './AppNavigator';
+import { Provider } from 'react-redux';
+import store from './components/redux/store/Store';
+import MainContainer from './MainContainer';
 WebBrowser.maybeCompleteAuthSession();
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login' }} />
-        <Stack.Screen name="Home" component={HomeScreen}/>
-        <Stack.Screen name="Cart" component={CartScreen} />
-        <Stack.Screen name="Info" component={InfoScreen} />
-        <Stack.Screen name="Notification" component={NotificationScreen} />
-        <Stack.Screen name="Inbox" component={InboxScreen} />
-        <Stack.Screen name="Header" component={HeaderScreen} />
-
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Provider store={store}>
+      <MainContainer/>
+    </Provider>
   );
 };
 export default App;
