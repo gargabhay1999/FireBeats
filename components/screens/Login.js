@@ -9,7 +9,8 @@ const Login = ({navigation}) => {
     const [userInfo, setUserInfo] = React.useState(null);
     const [request, response, promptAsync] = Google.useAuthRequest({
         androidClientId: "930703131960-fq2da70dmg96cnsrrn3hnp9qiutdu099.apps.googleusercontent.com",
-        webClientId: "930703131960-efo9amqv0qf88526p51m8ft34nebedha.apps.googleusercontent.com"
+        webClientId: "930703131960-efo9amqv0qf88526p51m8ft34nebedha.apps.googleusercontent.com",
+        expoClientId: "930703131960-bjcusthd6gem4k8hgc31i8g20phcrkq1.apps.googleusercontent.com"
     });
 
     React.useEffect(() => {

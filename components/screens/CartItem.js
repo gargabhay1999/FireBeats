@@ -15,7 +15,7 @@ const CartItem = ({ item, onRemoveItem, onAddWishList, onRemoveFromWishlist, isW
                 marginBottom: 10,
                 marginRight: 15
             }}>
-                <Image source={item.image} style={{ width: '100%', height: '70%', borderTopLeftReadius: '10', borderTopRightReadius: '10' }} />
+                <Image source={item.image} style={{ width: '100%', height: '70%', borderTopLeftRadius: 10, borderTopRightRadius: 10 }} />
                 <View
                     style={{
                         flexDirection: 'column',
@@ -24,7 +24,7 @@ const CartItem = ({ item, onRemoveItem, onAddWishList, onRemoveFromWishlist, isW
                         justifyContent: 'center',
                     }}>
                     <Text style={{ marginTop: 5, fontSize: 18, paddingLeft: 10, fontWeight: '600' }}>{item.name}</Text>
-                    <Text style={{ marginTop: 5, fontSize: 18, fontWeight: '200', textDecoration: 'line-through' }}>
+                    <Text style={{ marginTop: 5, fontSize: 18, fontWeight: '200', textDecorationLine: 'line-through' }}>
                         {"Regular Price: $" + item.price}
                     </Text>
                     <Text style={{ marginTop: 5, fontSize: 18, fontWeight: '600' }}>
