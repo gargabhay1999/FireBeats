@@ -104,7 +104,7 @@ const CartItem = ({ item, onRemoveItem, onAddWishList, onRemoveFromWishlist, isW
                     }} onPress={() => {
                         onAddWishList(item)
                     }}>
-                        <Image source={require('./../../assets/heart.jpeg')} style={{ width: 24, height: 24 }} />
+                        <Image source={require('./../../assets/heart.png')} style={{ width: 24, height: 24 }} />
                     </TouchableOpacity>
                 )}
 

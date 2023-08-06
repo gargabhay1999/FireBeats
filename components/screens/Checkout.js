@@ -117,17 +117,20 @@ const Checkout = ({ navigation }) => {
                         <Text>{'Total : '}</Text>
                         <Text>{'$ ' + getTotalPrice()}</Text>
                     </View>
-                    {/* <ScrollView> */}
                     <FlatList
                         style={{height:180}}
                         data={addressList}
                         renderItem={({ item, index }) => {
                             return (
-                                <View style={{ width: '100%', height: 60, borderWidth: 1, borderColor: '#8e8e8e', alignSelf: 'center', justifyContent: 'space-between', flexDirection: 'row', alignItems: 'center' }}>
+                                <View style={{ width: '100%', height: 150, borderWidth: 1, borderColor: '#8e8e8e', alignSelf: 'center', justifyContent: 'space-between', flexDirection: 'row', alignItems: 'center' }}>
                                     <View>
-                                        <Text style={{ marginTop: 20, marginLeft: 20 }}>{"City: " + item.city}</Text>
-                                        <Text style={{ marginLeft: 20 }}>{"Building: " + item.building}</Text>
-                                        <Text style={{ marginLeft: 20, marginBottom: 20 }}>{"Pincode: " + item.pincode}</Text>
+                                        <Text style={{marginTop:10, marginLeft:20}}>{"Name: " + item.name}</Text>
+                                        <Text style={{marginLeft:20}}>{"Email: " + item.email}</Text>
+                                        <Text style={{marginLeft:20}}>{"Address: " + item.address}</Text>
+                                        <Text style={{marginLeft:20}}>{"City: " + item.city}</Text>
+                                        <Text style={{marginLeft:20}}>{"State: " + item.state}</Text>
+                                        <Text style={{marginLeft:20}}>{"ZIP: " + item.zip}</Text>
+                                        <Text style={{marginLeft:20, marginBottom:10}}>{"Country: " + item.country}</Text>
                                     </View>
                                     <TouchableOpacity
                                         style={{
@@ -137,7 +140,7 @@ const Checkout = ({ navigation }) => {
                                             marginRight: 20
                                         }}
                                         onPress={() => {
-                                            setSelectedAddress('City: '+item.city + ', Building: ' + item.building+', Pincode: '+item.pincode)
+                                            setSelectedAddress(item.address + ', ' + item.city + ', ' + item.state +', '+ item.zip + ', '+item.country)
                                         }}
                                     >
                                         <Text>SELECT</Text>
@@ -146,7 +149,6 @@ const Checkout = ({ navigation }) => {
                             )
                         }}
                     />
-                    {/* </ScrollView> */}
                     <View style={{marginBottom:10}}>
                     <Text style={{fontSize:16}}>Selected Address</Text>
                     <Text style={{marginLeft:20,fontSize:16}}>{selectedAddress==''?'Please select adress from above list.':selectedAddress}</Text>

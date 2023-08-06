@@ -10,7 +10,7 @@ const MyAddress = ({ navigation }) => {
     const isFocused = useIsFocused();
     const addressList = useSelector(state => state.AddressReducer);
     const dispatch = useDispatch();
-    console.log(addressList);
+    console.log("Address List: "+addressList);
     return (
         <SafeAreaView style={{flex:1}}>
             <View style={{ flex: 1 }}>
@@ -33,11 +33,15 @@ const MyAddress = ({ navigation }) => {
                 data={addressList}
                 renderItem={({ item, index }) => {
                     return (
-                        <View style={{width:'100%', height:80, borderWidth:2, borderColor:'#8e8e8e', alignSelf:'center', justifyContent:'space-between', flexDirection:'row', alignItems:'center', marginBottom:20}}>
+                        <View style={{width:'100%', height:150, borderWidth:2, borderColor:'#8e8e8e', alignSelf:'center', justifyContent:'space-between', flexDirection:'row', alignItems:'center', marginBottom:20}}>
                             <View>
-                                <Text style={{marginTop:20, marginLeft:20}}>{"City: " + item.city}</Text>
-                                <Text style={{marginLeft:20}}>{"Building: " + item.building}</Text>
-                                <Text style={{marginLeft:20, marginBottom:20}}>{"Pincode: " + item.pincode}</Text>
+                                <Text style={{marginTop:10, marginLeft:20}}>{"Name: " + item.name}</Text>
+                                <Text style={{marginLeft:20}}>{"Email: " + item.email}</Text>
+                                <Text style={{marginLeft:20}}>{"Address: " + item.address}</Text>
+                                <Text style={{marginLeft:20}}>{"City: " + item.city}</Text>
+                                <Text style={{marginLeft:20}}>{"State: " + item.state}</Text>
+                                <Text style={{marginLeft:20}}>{"ZIP: " + item.zip}</Text>
+                                <Text style={{marginLeft:20, marginBottom:10}}>{"Country: " + item.country}</Text>
                             </View>
                             <TouchableOpacity
                                 style={{

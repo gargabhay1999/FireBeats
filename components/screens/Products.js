@@ -1,258 +1,77 @@
 export const products = {
-    category: [
+    category: 'Health Tracker',
+    data: [
         {
-            category:'Tshirt',
-            data: [
-                {
-                    'name':'t-shirt 0',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'t-shirt 1',
-                    price: 350,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'t-shirt 2',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'t-shirt 3',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'t-shirt 4',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'t-shirt 5',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'t-shirt 6',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                }
-            ]
+            id: 1,
+            name: 'Fitbit Alta HR+',
+            brand: 'Fitbit',
+            price: 100,
+            discountedPrice: 80,
+            details: "The Fitbit is a wearable computing device. It is a fitness band, worn on a persons wrist and is designed to track physical activity. Fitbit devices are designed to track important health and activity markers, including heart rate, quality of sleep and the number of steps walked. The device is comparable to the Apple Watch and the discontinued Microsoft Band.",
+            image: require('./../../assets/listing/watch3.png')
         },
         {
-            category:'Jeans',
-            data: [
-                {
-                    'name':'Jeans 1',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Jeans 1',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Jeans 2',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Jeans 3',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Jeans 4',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                }
-            ]
+            id: 2,
+            name: 'Fitbit Alta HR+',
+            brand: 'Fitbit',
+            price: 200,
+            discountedPrice: 160,
+            details: "The Fitbit is a wearable computing device. It is a fitness band, worn on a persons wrist and is designed to track physical activity. Fitbit devices are designed to track important health and activity markers, including heart rate, quality of sleep and the number of steps walked. The device is comparable to the Apple Watch and the discontinued Microsoft Band.",
+            image: require('./../../assets/listing/watch4.png')
         },
         {
-            category:'Kurta',
-            data: [
-                {
-                    'name':'Kurta 1',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Kurta 1',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Kurta 2',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Kurta 3',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Kurta 4',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                }
-            ]
+            id: 3,
+            name: 'Garmin Alta HR+',
+            brand: 'Garmin',
+            price: 300,
+            discountedPrice: 220,
+            details: "The Fitbit is a wearable computing device. It is a fitness band, worn on a persons wrist and is designed to track physical activity. Fitbit devices are designed to track important health and activity markers, including heart rate, quality of sleep and the number of steps walked. The device is comparable to the Apple Watch and the discontinued Microsoft Band.",
+            image: require('./../../assets/listing/watch1.jpeg')
         },
         {
-            category:'Shirt',
-            data: [
-                {
-                    'name':'Shirt 1',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Shirt 1',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Shirt 2',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Shirt 3',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Shirt 4',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                }
-            ]
+            id: 4,
+            name: 'Apple Alta HR+',
+            brand: 'Apple',
+            price: 400,
+            discountedPrice: 370,
+            details: "The Fitbit is a wearable computing device. It is a fitness band, worn on a persons wrist and is designed to track physical activity. Fitbit devices are designed to track important health and activity markers, including heart rate, quality of sleep and the number of steps walked. The device is comparable to the Apple Watch and the discontinued Microsoft Band.",
+            image: require('./../../assets/listing/watch6.png')
         },
         {
-            category:'Socks',
-            data: [
-                {
-                    'name':'Socks 1',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Socks 1',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Socks 2',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Socks 3',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Socks 4',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                }
-            ]
+            id: 5,
+            name: 'WearOS Alta HR+',
+            brand: 'WearOS',
+            price: 500,
+            discountedPrice: 250,
+            details: "The Fitbit is a wearable computing device. It is a fitness band, worn on a persons wrist and is designed to track physical activity. Fitbit devices are designed to track important health and activity markers, including heart rate, quality of sleep and the number of steps walked. The device is comparable to the Apple Watch and the discontinued Microsoft Band.",
+            image: require('./../../assets/listing/watch6.png')
         },
         {
-            category:'Shoes',
-            data: [
-                {
-                    'name':'Shoes 1',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Shoes 1',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Shoes 2',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Shoes 3',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                },
-                {
-                    'name':'Shoes 4',
-                    price: 300,
-                    discountedPrice: '250',
-                    gender: 'male',
-                    image: require('./../../assets/listing/watch1.jpeg')
-                }
-            ]
+            id: 6,
+            name: 'Omron Alta HR+',
+            brand: 'Omron',
+            price: 600,
+            discountedPrice: 399,
+            details: "The Fitbit is a wearable computing device. It is a fitness band, worn on a persons wrist and is designed to track physical activity. Fitbit devices are designed to track important health and activity markers, including heart rate, quality of sleep and the number of steps walked. The device is comparable to the Apple Watch and the discontinued Microsoft Band.",
+            image: require('./../../assets/listing/watch7.png')
+        },
+        {
+            id: 7,
+            name: 'Accuchek Alta HR+',
+            brand: 'Accuchek',
+            price: 700,
+            discountedPrice: 550,
+            details: "The Fitbit is a wearable computing device. It is a fitness band, worn on a persons wrist and is designed to track physical activity. Fitbit devices are designed to track important health and activity markers, including heart rate, quality of sleep and the number of steps walked. The device is comparable to the Apple Watch and the discontinued Microsoft Band.",
+            image: require('./../../assets/listing/watch9.png')
+        },
+        {
+            id: 8,
+            name: 'Apple Alta HR+',
+            brand: 'Apple',
+            price: 800,
+            discountedPrice: 750,
+            details: "The Fitbit is a wearable computing device. It is a fitness band, worn on a persons wrist and is designed to track physical activity. Fitbit devices are designed to track important health and activity markers, including heart rate, quality of sleep and the number of steps walked. The device is comparable to the Apple Watch and the discontinued Microsoft Band.",
+            image: require('./../../assets/listing/watch3.png')
         }
     ]
 }

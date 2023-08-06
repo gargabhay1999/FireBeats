@@ -1,7 +1,12 @@
-import React from "react";
-import { Pressable, View, Image, Text, FlatList, TouchableOpacity } from "react-native";
+import React, { useState } from "react";
+import { Pressable, View, Image, Text, FlatList, TouchableOpacity, Modal, Button } from "react-native";
 
 const ProductCard = ({item, onAddToCart, onAddWishList}) => {
+    
+    const [isInfoModalVisible, setInfoModalVisible] = useState(false);
+    const toggleInfoModal = () => {
+        setInfoModalVisible(!isInfoModalVisible);
+    };
     return (
         <View style={{
             width: '90%',
@@ -69,8 +74,51 @@ const ProductCard = ({item, onAddToCart, onAddWishList}) => {
             }} onPress={()=>{
                 onAddWishList(item)
             }}>
-                <Image source={require('./../../assets/heart.jpeg')} style={{width: 24, height: 24}}/>
+                <Image source={require('./../../assets/heart.png')} style={{width: 24, height: 24}}/>
             </TouchableOpacity>
+            <TouchableOpacity style={{
+                width: 40,
+                height: 40,
+                backgroundColor: '#fff',
+                borderRadius: 25,
+                elevation: 5,
+                position: 'absolute',
+                top: 125,
+                left: 10,
+                justifyContent: 'center',
+                alignItems: 'center',
+            }} onPress={toggleInfoModal}
+            >
+                <Image source={require('./../../assets/info.png')} style={{width: 24, height: 24}}/>
+            </TouchableOpacity>
+            <Modal
+                animationType="slide"
+                transparent={false}
+                visible={isInfoModalVisible}
+                onRequestClose={toggleInfoModal}
+            >
+                <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                    <Text style={{ fontSize: 18, marginBottom: 20 }}>Product Description</Text>
+                    <Text>{item.details}</Text>
+                    <TouchableOpacity
+                        style={{
+                            marginTop: 20,
+                            width: '98%',
+                            borderWidth: 1,
+                            borderRadius: 5,
+                            padding: 5,
+                            backgroundColor: 'black',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            alignSelf: 'center',
+                            marginBottom: 10
+                        }}
+                        onPress={toggleInfoModal}
+                    >
+                        <Text style={{ color: 'white', fontSize: 16 }}>Close</Text>
+                    </TouchableOpacity> 
+                </View>
+            </Modal>
             
         </View>
     )

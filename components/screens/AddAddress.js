@@ -4,9 +4,13 @@ import { useDispatch } from "react-redux";
 import { addAddress } from "../redux/actions/Actions";
 
 const AddAddress = ({ navigation }) => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [address, setAddress] = useState('');
     const [city, setCity] = useState('');
-    const [building, setBuilding] = useState('');
-    const [pincode, setPincode] = useState('');
+    const [state, setState] = useState('');
+    const [zip, setZip] = useState('');
+    const [country, setCountry] = useState('');
     const dispatch = useDispatch();
     return (
         <View style={{ flex: 1 }}>
@@ -27,6 +31,30 @@ const AddAddress = ({ navigation }) => {
             </View>
             <SafeAreaView>
                 <TextInput
+                    placeholder={'Enter Your Name'}
+                    style={styles.input}
+                    onChangeText={text => {
+                        setName(text);
+                    }}
+                    value={name}
+                />
+                <TextInput
+                    placeholder={'Enter Your Email'}
+                    style={styles.input}
+                    onChangeText={text => {
+                        setEmail(text);
+                    }}
+                    value={email}
+                />
+                <TextInput
+                    placeholder={'Enter Your Address'}
+                    style={styles.input}
+                    onChangeText={text => {
+                        setAddress(text);
+                    }}
+                    value={address}
+                />
+                <TextInput
                     placeholder={'Enter City Name'}
                     style={styles.input}
                     onChangeText={text => {
@@ -35,21 +63,29 @@ const AddAddress = ({ navigation }) => {
                     value={city}
                 />
                 <TextInput
-                    placeholder={'Enter Building Name'}
+                    placeholder={'Enter State Code'}
                     style={styles.input}
                     onChangeText={text => {
-                        setBuilding(text);
+                        setState(text);
                     }}
-                    value={building}
+                    value={state}
                 />
                 <TextInput
-                    placeholder={'Enter Pincode'}
+                    placeholder={'Enter ZIP'}
                     style={styles.input}
                     onChangeText={text => {
-                        setPincode(text);
+                        setZip(text);
                     }}
-                    value={pincode}
+                    value={zip}
                     keyboardType={'number-pad'}
+                />
+                <TextInput
+                    placeholder={'Enter Country Name'}
+                    style={styles.input}
+                    onChangeText={text => {
+                        setCountry(text);
+                    }}
+                    value={country}
                 />
             </SafeAreaView>
             <Pressable 
@@ -66,8 +102,8 @@ const AddAddress = ({ navigation }) => {
                     alignSelf:'center'
                 }}
                 onPress={() => {
-                    if(city!=='' && building!=='' && pincode!=='') {
-                        dispatch(addAddress({city:city, building:building, pincode:pincode}));
+                    if(name!=='' && email!=='' && address!='' && city!=='' && state!=='' && zip!=='') {
+                        dispatch(addAddress({name:name, email:email, address:address, city:city, state:state, zip:zip, country:country}));
                         navigation.goBack("MyAddress")
                     }
                     

@@ -15,6 +15,7 @@ import MyAddress from './components/screens/MyAddress';
 import AddAddress from './components/screens/AddAddress';
 import Checkout from './components/screens/Checkout';
 import Order from './components/screens/Order';
+import FilterOptions from './components/screens/FilterOptions';
 
 const Stack = createStackNavigator();
 
@@ -35,6 +36,7 @@ const AppNavigator = () => {
           <Stack.Screen name="AddAddress" component={AddAddress} />
           <Stack.Screen name="Checkout" component={Checkout} />
           <Stack.Screen name="Order" component={Order} />
+          <Stack.Screen name="FilterOptions" component={FilterOptions} />
         </Stack.Navigator>
       </NavigationContainer>
     );
