@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Pressable, View, Image, Text, FlatList, TouchableOpacity } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteAddress } from "../redux/actions/Actions";
+import { SafeAreaView } from "react-native";
 
 let addressList = [];
 const MyAddress = ({ navigation }) => {
@@ -11,7 +12,8 @@ const MyAddress = ({ navigation }) => {
     const dispatch = useDispatch();
     console.log(addressList);
     return (
-        <View style={{ flex: 1 }}>
+        <SafeAreaView style={{flex:1}}>
+            <View style={{ flex: 1 }}>
             <View style={{ width: '100%', height: 70, justifyContent: "space-between", flexDirection: 'row', alignItems: 'center' }}>
                 <Text style={{ fontWeight: 600, fontSize: 18, marginLeft: 20 }}>My Address</Text>
                 <TouchableOpacity
@@ -55,6 +57,7 @@ const MyAddress = ({ navigation }) => {
                 }}
             />
         </View>
+        </SafeAreaView>
     )
 }
 export default MyAddress;

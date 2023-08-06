@@ -1,11 +1,11 @@
-import { ADD_ADDRESS, DELETE_ADDRESS } from "../ActionTypes";
+import { ADD_ORDER, DELETE_ORDER } from "../ActionTypes";
 
-const AddressReducer = (state = [], action) => {
+const OrderReducer = (state = [], action) => {
     switch (action.type) {
-        case ADD_ADDRESS:
+        case ADD_ORDER:
             return [...state, action.payload];
 
-        case DELETE_ADDRESS:
+        case DELETE_ORDER:
             const deletedArray = state.filter((item, index) => {
                 return index !== action.payload
             })
@@ -15,4 +15,4 @@ const AddressReducer = (state = [], action) => {
             return state;
     }
 };
-export default AddressReducer;
+export default OrderReducer;
