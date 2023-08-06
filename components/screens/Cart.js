@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Pressable, Text, FlatList } from 'react-native';
+import { Alert, View, Pressable, Text, FlatList } from 'react-native';
 import CartItem from "./CartItem";
 import { useDispatch, useSelector } from "react-redux";
 import { addToWishlist, removeFromCart } from "../redux/actions/Actions";
@@ -48,7 +48,8 @@ const Cart = ({ navigation }) => {
                         alignSelf: 'center'
                     }}
                     onPress={() => {
-                        
+                        // Alert.alert("hi")
+                        navigation.navigate("Checkout");
                     }}>
                     <Text style={{ color: '#fff' }}>{"Checkout"}</Text>
                 </Pressable>
