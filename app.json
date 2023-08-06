@@ -32,6 +32,11 @@
     "web": {
       "favicon": "./assets/logo.png"
     },
-    "scheme": "firebeats"
+    "scheme": "firebeats",
+    "extra": {
+      "eas": {
+        "projectId": "d7c5b7c2-0bb7-46bb-a243-91fa95c27735"
+      }
+    }
   }
 }
