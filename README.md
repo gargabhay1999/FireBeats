@@ -8,10 +8,11 @@ Our Artificial Intelligence algorithms track your health tracker to track your h
 ![WhatsApp Image 2023-08-07 at 17 17 01](https://github.com/gargabhay1999/FireBeats/assets/22857702/973a2928-3b4b-4adc-b107-84ea20e60cd2)
 ![WhatsApp Image 2023-08-07 at 17 19 13](https://github.com/gargabhay1999/FireBeats/assets/22857702/3d7e9447-0bb0-49e0-bc45-0f772d2c099f)
 ![IMG-20230807-WA0015](https://github.com/gargabhay1999/FireBeats/assets/22857702/1ddf7df0-24d5-4e09-85d2-b5a8f71727c5)
+![IMG-20230807-WA0027](https://github.com/gargabhay1999/FireBeats/assets/22857702/2d607b9f-8101-48d6-9f63-e110aab1fae1)
 ![IMG-20230807-WA0014](https://github.com/gargabhay1999/FireBeats/assets/22857702/d044be72-5fbe-48e4-9bd0-0854fae8911e)
 ![IMG-20230807-WA0023](https://github.com/gargabhay1999/FireBeats/assets/22857702/20d269e2-8d40-4c82-99b4-b828ba78fd88)
 ![IMG-20230807-WA0017](https://github.com/gargabhay1999/FireBeats/assets/22857702/60559d0f-1e4f-408f-ac8d-f681b06da7fc)
-![IMG-20230807-WA0027](https://github.com/gargabhay1999/FireBeats/assets/22857702/2d607b9f-8101-48d6-9f63-e110aab1fae1)
+
 ![IMG-20230807-WA0016](https://github.com/gargabhay1999/FireBeats/assets/22857702/f863194d-f4ab-4247-9909-c440e2b92ca4)
 ![IMG-20230807-WA0020](https://github.com/gargabhay1999/FireBeats/assets/22857702/e22c2439-de53-44d9-bfda-d13ef1ad94e9)
 ![IMG-20230807-WA0018](https://github.com/gargabhay1999/FireBeats/assets/22857702/b99ed9e8-46e1-42d8-9fc4-799f1e5549ce)
