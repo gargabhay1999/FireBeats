@@ -109,7 +109,6 @@ const Home = ({ navigation, route }) => {
                             <ProductCard
                                 item={item}
                                 onAddWishList={(x) => {
-                                    console.log("adfs");
                                     dispatch(addToWishlist(x))
                                 }}
                                 onAddToCart={(x) => {
