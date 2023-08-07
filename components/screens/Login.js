@@ -115,6 +115,9 @@ const Login = ({ navigation }) => {
                     </View>
                 )
             }
+            {/* <Pressable style={styles.button} onPress={() => logoutUser()}>
+                            <Text style={styles.text}>{"Sign Out"}</Text>
+                        </Pressable> */}
 
 
             <StatusBar style="auto" />

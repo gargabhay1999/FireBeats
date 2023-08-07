@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Pressable, View, Image, Text, FlatList, TouchableOpacity, Modal, Button } from "react-native";
+import { Pressable, View, Image, ToastAndroid, Text, FlatList, TouchableOpacity, Modal, Button } from "react-native";
 
 const ProductCard = ({item, onAddToCart, onAddWishList}) => {
     
@@ -42,6 +42,11 @@ const ProductCard = ({item, onAddToCart, onAddWishList}) => {
                     justifyContent: 'center'
                 }} onPress={()=>{
                     onAddToCart(item)
+                    ToastAndroid.showWithGravity(
+                        'Item has been added to the cart.',
+                        ToastAndroid.SHORT,
+                        ToastAndroid.CENTER,
+                    );
                 }}>
                     <Text style={{color:'white', fontSize:16}}>{"Add to Cart"}</Text>
                 </TouchableOpacity>
@@ -73,6 +78,11 @@ const ProductCard = ({item, onAddToCart, onAddWishList}) => {
                 alignItems: 'center',
             }} onPress={()=>{
                 onAddWishList(item)
+                ToastAndroid.showWithGravity(
+                    'Item has been added to the wishlist.',
+                    ToastAndroid.SHORT,
+                    ToastAndroid.CENTER,
+                );
             }}>
                 <Image source={require('./../../assets/heart.png')} style={{width: 24, height: 24}}/>
             </TouchableOpacity>

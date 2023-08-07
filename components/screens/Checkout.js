@@ -30,17 +30,15 @@ const Checkout = ({ navigation }) => {
 
     const handlePayPress = async () => {
         //1.Gather the customer's billing information (e.g., email)
-        if (!cardDetails?.complete || !email) {
-            Alert.alert("Please enter Complete card details and Email");
-            // return;
+        if (!cardDetails?.complete || selectedAddress=='') {
+            Alert.alert("Please select  Address and Complete Card Details");
+            return;
         }
         const billingDetails = {
             email: email,
         };
-        //2.Fetch the intent client secret from the backend
         try {
             const { clientSecret, error } = await fetchPaymentIntentClientSecret();
-            //2. confirm the payment
             if (error) {
                 console.log("Unable to process payment");
             } else {
@@ -63,10 +61,9 @@ const Checkout = ({ navigation }) => {
     };
 
     const handlePaymentPress = async () => {
-        //1.Gather the customer's billing information (e.g., email)
-        if (!cardDetails?.complete) {
-            Alert.alert("Please enter Complete card details and Email");
-            // return;
+        if (!cardDetails?.complete || selectedAddress=='') {
+            Alert.alert("Please select the address and fill the card details.");
+            return;
         }
         const billingDetails = {
             email: email,
@@ -76,7 +73,8 @@ const Checkout = ({ navigation }) => {
         alert("Your Payment has been received. Thank you!");
         console.log("Your Payment has been received. Thank you! ", clientSecret);
         dispatch(addOrder({items:cartData, total:getTotalPrice(), address:selectedAddress}))
-        navigation.navigate("Order", {total:'300'});
+        // dispatch(removeFromCart({items:cartData}))
+        navigation.navigate("Order");
     }
 
     const getTotalPrice = () => {
