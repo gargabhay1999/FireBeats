@@ -3,9 +3,9 @@
 Our Artificial Intelligence algorithms track your health tracker to track your health
 
 
-![WhatsApp Image 2023-08-07 at 17 17 01](https://github.com/gargabhay1999/FireBeats/assets/22857702/973a2928-3b4b-4adc-b107-84ea20e60cd2)
-![WhatsApp Image 2023-08-07 at 17 17 00](https://github.com/gargabhay1999/FireBeats/assets/22857702/76ad469a-d5ef-4126-8d36-624a795e914f)
 
+![WhatsApp Image 2023-08-07 at 17 17 00](https://github.com/gargabhay1999/FireBeats/assets/22857702/76ad469a-d5ef-4126-8d36-624a795e914f)
+![WhatsApp Image 2023-08-07 at 17 17 01](https://github.com/gargabhay1999/FireBeats/assets/22857702/973a2928-3b4b-4adc-b107-84ea20e60cd2)
 ![WhatsApp Image 2023-08-07 at 17 19 13](https://github.com/gargabhay1999/FireBeats/assets/22857702/3d7e9447-0bb0-49e0-bc45-0f772d2c099f)
 ![IMG-20230807-WA0015](https://github.com/gargabhay1999/FireBeats/assets/22857702/1ddf7df0-24d5-4e09-85d2-b5a8f71727c5)
 ![IMG-20230807-WA0014](https://github.com/gargabhay1999/FireBeats/assets/22857702/d044be72-5fbe-48e4-9bd0-0854fae8911e)
