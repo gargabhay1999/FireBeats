@@ -11,7 +11,7 @@ const Order = ({navigation}) =>{
                     data={orders}
                     renderItem={({item, index})=>{
                         return (
-                            <View style={{width:'100%', height:100}}>
+                            <View style={{width:'100%', borderWidth:0.5, justifyContent:'center', borderColor:'#8e8e8e'}}>
                                 {item.items.map(x=>{
                                     return(
                                         <View
@@ -22,6 +22,9 @@ const Order = ({navigation}) =>{
                                             />
                                             <Text style={{marginLeft:20, fontSize:18}}>
                                                 {x.name}
+                                            </Text>
+                                            <Text style={{marginLeft:20}}>
+                                                {'Total: $ '+ x.discountedPrice}
                                             </Text>
                                         </View>
                                     );
