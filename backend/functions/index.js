@@ -4,7 +4,7 @@ const express = require("express");
 const port = 5006;
 const app = express();
 
-const SECRET_KEY = "sk_test_51NbgfDSBx5aTVTJHejkHNpd8abuaHUNO7Y3qd20wLN3EfwLvQQrbny0W2iuqQoqRHrLEv9NqqUx4thk4rfu5lNmI00Wfv4tmQi"
+const SECRET_KEY = "SECRET_KEY"
 
 const stripe = require("stripe")(SECRET_KEY);
 
